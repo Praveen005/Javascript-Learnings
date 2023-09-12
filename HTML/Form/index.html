@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Element</h1>
+    <h2>Input element</h2>
+    <input type="text">
+    <br>
+    <input type="password" name="Passkey" id="rt">
+    <br><br>
+    <input type="email" name="" id="">
+    <br><br>
+    <input min="0" max="35" type="number" name="" id="">
+    <br><br> 
+    <input type="date" name="" id="">
+    <br><br>
+    <label for="c2">alliter</label>
+    <input name="c2" id="c2" type="checkbox">
+    <label for="c3">hippopotamus</label>
+    <input name="c3" id="c3" type="checkbox">
+    <label for="c4">rhinosorous</label>
+    <input name="c4" id="c4" type="checkbox">
+    <br><br>
+    <input type="radio" name="c1">X
+    <input type="radio" name="c1" id="">Y
+    <input type="radio" name="c1" id="">Z
+    <input type="radio" name="c1" id="">W
+
+    <br><br>
+
+
+    <label for="r2">
+        <input type="radio" name="r1" id="r2">
+        option 1        
+    </label>
+    <label for="r3">
+        <input type="radio" name="r1" id="r3">
+        option 2        
+    </label>
+    <label for="r4">
+        <input type="radio" name="r1" id="r4">
+        option 3        
+    </label>
+
+
+    <br><br>
+
+    <label for="story1">Tell us your story:</label>
+    <br><br>
+    <textarea name="story" id="story1" cols="30" rows="6">I have a very dreaded story to share..</textarea>
+
+    <br><br>
+
+    <label for="story2">Tell us your story:</label>
+    <br><br>
+    <textarea name="story" id="story2" cols="30" rows="6">I have a very dreaded story to share..</textarea>
+
+    <br><br>
+
+    <label for="story3">Tell us your story:</label>
+    <br><br>
+    <textarea name="story" id="story3" cols="30" rows="6">I have a very dreaded story to share..</textarea>
+
+    <br><br>
+    <textarea   wrap="hard" name="" id="" cols="30" rows="5" ></textarea>
+
+    <br><br>
+    <textarea   wrap="soft" name="" id="" cols="30" rows="5" >
+        
+    </textarea>
+
+    <select multiple name="" id="">
+        <option value="">India</option>
+        <option value="">Hind</option>
+        <option value="">Aryavart</option>
+        <option value="">Bharat</option>
+    </select>
+
+    <br><br>
+    <form action="http://google.com/search">
+        <input type="text" name="q">
+        <button type="submit">Search</button>
+        <button type="reset">❌</button>
+    </form>
+
+    <!-- one can make button using input tag as well as using button tag, but using input tag you can use only text, but with button tag
+    you ca use image, emoji, text etc. -->
+
+    <br><br><br>
+
+    <input type="submit" value="Submit2">
+    <br>
+    <button type="submit"> <img src="some address" alt="img"> </button>
+
+    <label for="food">Food Items</label>
+    <input id="food" type="checkbox" value="Maggi">Maggi
+    <input id="food" type="checkbox" value="Chappati">Chappati
+    <input id="food" type="checkbox" value="Kheer">Kheer
+    
+    <form action="#">
+        <fieldset>
+          <legend>Do you agree?</legend>
+          <input type="checkbox" id="chbx" name="agree" value="Yes!" />
+          <label for="chbx">I agree</label>
+        </fieldset>
+      </form>
+
+      <fieldset>
+        <legend>Hi, How are you?</legend>
+      </fieldset>
+      
+
+
+</body>
+</html>
+
+
+
+<!-- The action attribute defines where the data gets sent. Its value must be a valid relative or absolute URL. 
+If this attribute isn't provided, the data will be sent to the URL of the page containing the form — the current page. -->
+
+<!-- The method attribute defines how data is sent. -->
+<!-- if the value of method attribute is "GET",  The data is appended to the URL as a series of name/value pairs.
+if it it "POST".  -->

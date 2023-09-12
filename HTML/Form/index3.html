@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        span{
+            color: red;
+        }
+
+
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0; 
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <h1 style="background-color: rgb(43, 41, 41); color:#fff; padding:0.5rem;" >Status Updates</h1>
+        <label for="name">Name <span>*</span></label>
+        <br>
+        <input name="First_name" required placeholder="First" id="name" type="text">
+        
+        <input name="Last_name" required placeholder="Last" id="nmae" type="text">
+        <br><br>
+        <label for="place">Where are you? <span>*</span></label>
+        <br>
+        <input name="Address line 1" required placeholder="Street Address" id="place" type="text">
+        <br><br>
+        <input name="Address line 2" placeholder="Address line 2" id="place" type="text">
+
+        <br><br>
+
+        <label for="city">City</label>
+        <br>
+        <input name="city" id="city" type="text">
+
+        <br><br>
+
+        <label for="state">State/Region/Province</label>
+        <br>
+        <input name="State" type="text">
+
+        <br><br>
+
+        <label for="zip">Postal / Zip Code</label>
+        <br>
+        <input name="PIN Code" type="number" name="" id="zip">
+
+        <br><br>
+
+        <label for="country">Country</label>
+        <br>
+        
+        <select aria-placeholder="" name="Country name" id="country">
+            <option value="" disabled selected hidden>Select</option>
+            <option value="Afganistan">Afganistan</option>
+            <option value="Armenia">Armenia</option>
+            <option value="Belarus">Belarus</option>
+            <option value="Canada">Canada</option>
+            <option value="India">India</option>
+            <option value="Israel">Israel</option>
+        </select>
+
+        <br><br>
+        <label for="progress">What is the progress? <span>*</span> </label>
+        <br>
+        <input name="Progress" required min="0" max="100" type="range" name="" id="">
+
+
+        <br><br>
+        <label for="">How soon can we finish the project?<span>*</span>
+            <br>
+            <input required name="deadline" type="radio" value="Within this Week">Within this Week <br>
+            <input name="deadline" type="radio" value="1 to 2 Weeks">1 to 2 Weeks <br>
+            <input name="deadline" type="radio" value="More than 2 Weeks">More than 2 Weeks <br>
+        </label>
+        <br><br><br>
+
+        <button type="submit">Submit</button>
+
+        
+    </form>
+
+    <!-- To mark a field as mandatory, put in "required" inside the input element. user can't skip this entry now -->
+    <!-- In select input type, put "required" in any onr=e of the options -->
+    <!-- The required attribute does not apply to an input element in Range state. -->
+
+    <!-- value attribute in the input is the default value  -->
+
+    <!-- In input type like radio and checkboxes, upon selection name:value is stored in the server, so, they must be specified suitablly -->
+
+    <!-- If you want a radio button to remain selected/checked by default then you can use "checked" attribute in any one of them -->
+    
+    <!-- one can make button using input tag as well as using button tag, but using input tag you can use only text, but with button tag
+    you ca use image, emoji, text etc. -->
+
+   
+
+    <br><br><br>
+
+</body>
+</html>
+
+
+<!-- The action attribute defines where the data gets sent. Its value must be a valid relative or absolute URL. 
+If this attribute isn't provided, the data will be sent to the URL of the page containing the form — the current page. -->
+
+<!-- The method attribute defines how data is sent. -->
+<!-- if the value of method attribute is "GET",  The data is appended to the URL as a series of name/value pairs.
+if it it "POST".  -->
+
+
+
+<!-- when method="get", info gets appended to the url like below:
+
+http://127.0.0.1:5500/sample_media/form_hw/index.html?First_name=Praveen&Last_name=Kumar&Address+line+1=Gaya&Address+line+2=Bihar&city=Imamganj&State=Bihar&PIN+Code=824206&Country+name=India&Progress=72&deadline=Within+this+Week#
+
+ -->

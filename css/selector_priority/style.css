@@ -1,0 +1,15 @@
+table, td{
+    color: red;
+    border: 1px solid black;
+}
+
+.data1{
+    color: orange;    
+}
+#id1{
+    color: deepskyblue;
+}
+
+tr+td{
+    color: brown;
+}

@@ -1,0 +1,57 @@
+h2 + p {
+    font-size: 20px;
+    color: royalblue;
+}
+
+h2 ~ p{
+    background-color: bisque;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: beige;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.box:hover{
+    background-color: red;
+    color: aqua;
+}
+
+.box:active{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    font-size: 32pt;
+    width: 200px;
+    height: 100px;
+}
+
+input:focus{
+    width:200px;
+    height:40px;
+    background-color: aquamarine;
+    font-size: large;
+    font-weight: bold;
+}
+
+select:focus{
+    color: rgb(66, 110, 149);
+    background-color: rgb(214, 192, 192);
+}
+
+#inherit{
+    background-color: red;
+}
+
+
+.inherit{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+}
+
+
+

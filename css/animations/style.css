@@ -1,0 +1,47 @@
+.container{
+    margin: 30px;
+    width: 400px;
+    height: 400px;
+    background-color: lightpink;
+}
+
+.item{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    background-color: darkcyan;
+    border: 1px solid black;
+    display: inline-block;
+    animation: bounce  2s  infinite;
+}
+
+.one{
+    animation-timing-function: ease-in;
+}
+
+.two{
+    animation-timing-function: ease-out;
+}
+
+.three{
+    animation-timing-function: linear;
+}
+@keyframes bounce{
+    0%{
+
+    }
+
+    50%{
+        transform: translateY(300px);
+    }
+
+    100%{
+
+    }
+}
+
+
+
+
+/* The height and the width of inline elements can't be set by CSS. Height and width is the height and width of the content  */
+/*To do so, you gotta chage the display to inline block */

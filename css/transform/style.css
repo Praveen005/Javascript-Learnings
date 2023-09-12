@@ -1,0 +1,51 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    color: aqua;
+    margin: 50px;
+}
+
+.one{
+    transform: rotateZ(45deg) scale(.5, .5) translateX(40px) translateY(0px);
+}
+
+
+/* after scaling the text also gets scaled */
+
+/* the element is scaled at its own place, and doesn't pushes others */
+
+/* If you just change the height and width, it won't chage the text size */
+.two{
+    transform: scale(2, 2);
+}
+
+.three{
+    margin-top: 80px;
+
+    transform: scaleZ(2); /* won't work */
+}
+
+
+.four , .five{
+    /* height: 60px; */
+    width:600px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+
+
+.four > p{
+    font-size: 1em; /* Its size relative to the size of parent */
+}
+
+
+.five > p{
+    font-size: 1rem; /* Its size relative to the font-size in the browser setting */
+}
+
+
+/* em is a CSS unit relative to the font size of the parent element, while rem is a CSS unit relative to the font size of an html element. */

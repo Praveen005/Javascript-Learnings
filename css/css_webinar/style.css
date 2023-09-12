@@ -1,0 +1,61 @@
+.box{
+    margin: 20px;
+    padding: 10px;
+    border: solid 1px black;
+}
+
+#id1{
+    background-color: lightgreen ;
+}
+
+#id2{
+    background-color: lightsalmon ;
+}
+
+#id3{
+    background-color: lightcyan;
+}
+
+.one , .two{ 
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+}
+
+/* first argument for skewx, next for skewy */
+/* skewx means, keep the x-axis as it is and rotate the Y-axis by given degree */
+
+/* you won't be able to write multiple transform statements */
+/* for one class */
+
+/* so you can write onetransform statement and add multiple attributes using space  */
+
+/* you can also use matrix to apply multiple transforms on single element  */
+
+/* .one{
+    transform: skewX(22deg);
+    translateY(300px);
+} */
+
+
+.one{
+    transform: skewx(22deg) translateX(300px);
+}
+
+
+.two{
+    transform: matrix(1, .333, 0, 1, 200, 0);
+    /* transform: translateX(30px); */
+}
+
+
+
+
+
+
+
+/* Border takes its own space,it does not encroach upon the space of margin or padding */
+
+/* matrix(a, b, c, d, tx, ty)
+
+The values represent the following functions: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
