@@ -159,5 +159,15 @@ They are part of the Promise API and are used when you are dealing with asynchro
 The .then() method is used to handle the resolved (fulfilled) state of a Promise, and the .catch() method is used to handle the rejected (error) state of a Promise.
 
 
+
+
+https://stackoverflow.com/questions/69362121/when-should-i-use-try-catch-instead-of-then-catch: 
+
+If you're using await to handle the Promise then you wrap it in a try/catch. Think of await as a way to make asynchronous operations semantically similar to synchronous operations.
+
+But if you're not using await and are instead handling the Promise by appending .then() to it then you'd append a .catch() to that chain to catch failures from within the asynchronous operation.
+
+Because a try/catch isn't going to catch an exception that happens from within the asynchronous operation if that operation isn't awaited.
+
 */
 
