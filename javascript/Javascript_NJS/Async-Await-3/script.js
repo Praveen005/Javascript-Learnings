@@ -48,7 +48,7 @@ https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke
 
 */
 
-//Will throw error
+//Will throw syntax error
 const getPromise = async (s) => {    
     return new Promise((resolve, reject) => {
         setTimeout(() => resolve(s), 500);
@@ -77,10 +77,22 @@ const getPromise2 = async (s) => {
 (async() => {
     try {
         const result = getPromise2("a"); //no await, result(a promise) has not been unwrapped(prints: async/await ->  Promise {<pending>} in console, to unwrap use .then() or await before getPromise2())  
-        console.log('async/await -> ', result);
+        console.log('async/await2 -> ', result);
     } catch (err) {
         console.log(err);
     }
 })();
 
 
+//This would throw error: Error : SyntaxError: await is only valid in async functions and the top level bodies of modules
+//But if you put this code in chrome dev console, it will work. weird na? Hahaha
+// check: https://stackoverflow.com/questions/57459959/await-work-in-chrome-console-without-async-wrapper
+async function fetchData() {
+    // Simulate an asynchronous operation
+    return new Promise((resolve) => {
+      setTimeout(() => resolve('Data from moduleB'), 1000);
+    });
+  }
+  
+  const data = await fetchData();
+  console.log(data);
