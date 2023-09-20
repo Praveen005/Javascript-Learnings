@@ -1,6 +1,6 @@
-### Welcome to my JavaScript learnings repository! 🚀
+### Welcome! 🚀
 
-> - In this repository, I'm documenting my Web-Dev learnings.   
+> - In this repository, I'm documenting my JavaScript learnings.   
 >
 > - I have written it my way, might feel very unstructured to you 🥺. Please cut me some slack 🫠  
 
