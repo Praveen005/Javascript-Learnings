@@ -17,12 +17,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <div class="themeBtn"><i class="fas fa-sun"></i> Light</div>
     <div class="container">
         <header>
             <p class="project-name">JavaScript Quote Generator</p>
         </header>
 
         <section class="quote-section">
+            <button class="copy"><img src="Icons/copy-solid.svg" alt="Copy svg icon" class="copy-img"></button>
             <!-- Quote -->
             <div class="quote-box">
                 <blockquote class="blockquote-text">"Embrace your ambitions with unwavering dedication, for in a world where self-interest prevails, your dreams are the only legacy that truly matters."</blockquote>
@@ -45,17 +47,18 @@
 
 
                 <button class="whatsAppShareBtn"><i class="fab fa-whatsapp"></i> Share on WhatsApp</button>            
-                <button class="instagramShareBtn"><i class="fab fa-instagram"></i> Share on Instagram</button> 
             </div>              
                     
-            <!-- <div class="footer-bar"></div> -->
             
         </section>
-        <!-- <div class="footer-bar"></div> -->
 
     </div>
-    <img src="images/project-001.jpg" alt="Background Image">
+    <img class="bg-img" src="images/project-001.jpg" alt="Background Image">
 
+    <div class="textCopiedInfo">Copied To Clipboard</div>
+
+   
+      
     <script src="quotes.js"></script>
     <script src="script.js"></script>
 </body>
