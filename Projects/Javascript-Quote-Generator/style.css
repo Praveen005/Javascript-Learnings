@@ -30,7 +30,8 @@ img{
     align-items: center;
     color: aliceblue;
     max-width: 600px;
-
+    width: 100%;
+    /* height: 700px; */
 }
 
 header{
@@ -48,6 +49,7 @@ header{
 }
 
 .container .quote-section{
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -64,6 +66,13 @@ header{
     overflow: hidden;
     box-shadow: 1px 1px 5px;
     font-size: 1.2rem;
+    width: 100%;
+    height:320px;
+}
+
+.container .quote-box{
+    width: inherit;
+    height: 65%;
 }
 
 .quote-section blockquote{
@@ -84,13 +93,13 @@ header{
     margin-bottom: 10px;
     margin-left: 10px;
     background: #FFD43B;
-    color: #000;
     color: rgb(30, 48, 80);
     border-radius: 8px;
     font-size: 0.9rem;
     outline: none;
     font-weight: 600;
     cursor: pointer;
+    position: relative;
 }
 
 .quote-section button:hover{
@@ -99,15 +108,19 @@ header{
     color: rgb(20, 30, 50);
 }
 
+.quote-section .tweetBtn svg{
+    fill: rgb(30, 48, 80);
+}
+
 .quote-section button i{
-    color: #006400;
-    color: #000;
     color: rgb(30, 48, 80);
 }
 
 
 .quote-section .footer-bar{
+    position: relative;
     background: #021c0d;
     width: 500%;
     height: 8px;
+    bottom: 0;
 }
