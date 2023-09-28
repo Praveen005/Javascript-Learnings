@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252323;
+}
+
+.eye{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: #fdfdfd;
+    border-radius: 50%; 
+    border: 1px solid black;
+    margin: 0 20px;
+    overflow: hidden;
+    /* clip-path: ellipse(50% 25% at 50% 50%); */
+}
+
+.eyelid{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: red;
+    z-index: 1;
+}
+
+.eyeball{
+    height: 50%;
+    width: 50%;
+    background-color: #1e1e1e;
+    border-radius: 50%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.up{
+    top: -50%;
+    animation: blinkDown 10s linear infinite;
+}
+
+.down{
+    bottom: -50%;
+    animation: blinkUp 10s linear infinite;
+}
+
+
+@keyframes blinkDown {
+    5% {
+        top: 0;
+    }
+    10%{
+        top: -50%;
+    }
+    
+}
+
+@keyframes blinkUp {
+    5% {
+        bottom: 0;
+    }
+    10%{
+        bottom: -50%;
+    }    
+}
