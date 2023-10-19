@@ -14,7 +14,7 @@ console.log("Printing getName4: " + getName4);
 
 
 
-//It prints, 'undefined' for 'x' becauseduring memory allocation phase, x is assigned Undefined(check Execution context thing in google doc)
+//It prints, 'undefined' for 'x' because during memory allocation phase, x is assigned Undefined(check Execution context thing in google doc)
 console.log("Printing x: " + x);
 
 
@@ -62,7 +62,7 @@ to it would be 'undefined'
 You will be able to reference a variable in its scope before the line it is declared, without throwing a ReferenceError, but the value is always undefined. This is called "Declaration hoisting"
 
 
-But if you define them using let or const or class and use it in its scope but before declation will give you Reference error
+But if you define them using let or const or class and use it in its scope but before declaration will give you Reference error
 
 
 */
